@@ -1,0 +1,751 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <script src="https://kit.fontawesome.com/b124683f80.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous" />
+    <link rel="stylesheet" href="style.css" />
+    <title>News Week Clone</title>
+  </head>
+
+  <body class="container">
+    <nav>
+      <div class="row d-flex justify-content-between upper_nav">
+        <div class="mt-5 ml-4 text-light upper_nav_date">
+          Sun, Feb 16, 2020
+        </div>
+        <div class="upper_nav_logo">
+          <img class="mt-3 upper_logo" alt="pic" src="logo.svg" />
+        </div>
+        <div class="mt-5 mr-3 upper_nav_buttons">
+          <a class="upper_font text-light font-weight-bold sign_in" href="#">SIGN IN</a>
+          <span class="upper_font upper_button bg-white">Subscribe ></span>
+        </div>
+      </div>
+      <div class="row bg-white lower_nav">
+        <ul class="row p-3 d-flex flex-nowrap justify-content-between lower_nav_items">
+          <li class="pr-3 pl-3 border-right lower_nav_item"><a class="lower_nav_hover" href="#">U.S.</a></li>
+          <li class="pr-3 pl-0 border-right lower_nav_item"><a class="lower_nav_hover" href="#">World</a></li>
+          <li class="pr-3 pl-0 border-right lower_nav_item"><a class="lower_nav_hover" href="#">Business</a></li>
+          <li class="pr-3 pl-0 border-right lower_nav_item"><a class="lower_nav_hover" href="#">Tech & Science</a></li>
+          <li class="pr-3 pl-0 border-right lower_nav_item"><a class="lower_nav_hover" href="#">Culture</a></li>
+          <li class="pr-3 pl-0 border-right lower_nav_item"><a class="lower_nav_hover" href="#">Newsgeek</a></li>
+          <li class="pr-3 pl-0 border-right lower_nav_item"><a class="lower_nav_hover" href="#">Sports</a></li>
+          <li class="pr-3 pl-0 border-right lower_nav_item"><a class="lower_nav_hover" href="#">Health</a></li>
+          <li class="pr-3 pl-0 border-right lower_nav_item"><a class="lower_nav_hover" href="#">The Debate</a></li>
+          <li class="pr-3 pl-0 border-right lower_nav_item"><a class="lower_nav_hover" href="#">Vantage</a></li>
+          <li class="pr-3 pl-0 lower_nav_item"><a class="lower_nav_hover" href="#">Weather</a></li>
+          <li class="lower_nav_item"><input type="search" name="Search" value="Search" class="lower_nav_search" /><i class="pl-2 fas fa-search"></i></li>
+          <li class="lower_nav_item_block"></li>
+        </ul>
+      </div>
+    </nav>
+    
+    <div class="row d-lg-none d-flex justify-content-between align-items-center mobile_nav">
+      <div class="background_mobile_nav">
+        <div class="pl-3 mobile_nav_logo">
+          <img class="mobile_logo" alt="pic" src="logo.svg" />
+        </div>
+      </div>
+      <div class="pr-4 mobile_nav_buttons">
+          <a class="upper_font text-light font-weight-bold sign_in" href="#">SIGN IN</a>
+          <span class="upper_font upper_button bg-white">Subscribe ></span>
+          <a href="#"><i class="pl-3 pt-1 fas fa-bars fa-lg"></i></a>
+      </div>
+    </div>
+
+    <main class="row p-3 border-top bg-white mobile_padding">
+      <div class="row p-lg-3 p-md-0 p-sm-0 p-0 mt-5 mt-lg-0 d-flex justify-content-between main_content">
+        <div class="row col-12 pr-0 col-sm-12 col-md-12 col-lg-9 pr-md-0 pr-sm-0 main_left d-flex justify-content-between">
+          <div class="col-lg-5 col-md-5 col-sm-12 col-12 pr-0 order-2 pr-sm-0 pr-md-3 pr-lg-3 order-lg-1 order-md-1 order-sm-2 featured_stories">
+            <h4 class="header">Featured Stories</h4>
+            <ul class="d-flex flex-column p-0 stories">
+              <li class="stories_list">
+                <div class="image_block">
+                  <img class="stories_image" alt="pic" src="https://d.newsweek.com/en/full/1567564/amy-klobuchar.webp?w=397&h=265&q=90&f=6af0da94fdc2bcd272dde87528e2da02" />
+                  <h4 class="mb-0 block_title"><span class="stores_image_block">U.S</span></h4>
+                </div>
+                <a class="hover_stories" href="#">Amy Klobuchar Says She'd Support Bloomberg and He 'Should Be' in Debates</a>
+                <p class="stories_paragraph">"I still do not think he is the best candidate for our country," the Democratic presidential candidate noted.</p>
+              </li>
+              <li class="stories_list">
+                <div class="image_block">
+                  <img class="stories_image" alt="pic" src="https://d.newsweek.com/en/full/1567564/amy-klobuchar.webp?w=397&h=265&q=90&f=6af0da94fdc2bcd272dde87528e2da02" />
+                  <h4 class="mb-0 block_title"><span class="stores_image_block">U.S</span></h4>
+                </div>
+                <a class="hover_stories" href="#">Amy Klobuchar Says She'd Support Bloomberg and He 'Should Be' in Debates</a>
+                <p class="stories_paragraph">"I still do not think he is the best candidate for our country," the Democratic presidential candidate noted.</p>
+              </li>
+              <li class="stories_list">
+                <div class="image_block">
+                  <img class="stories_image" alt="pic" src="https://d.newsweek.com/en/full/1567564/amy-klobuchar.webp?w=397&h=265&q=90&f=6af0da94fdc2bcd272dde87528e2da02" />
+                  <h4 class="mb-0 block_title"><span class="stores_image_block">U.S</span></h4>
+                </div>
+                <a class="hover_stories" href="#">Amy Klobuchar Says She'd Support Bloomberg and He 'Should Be' in Debates</a>
+                <p class="stories_paragraph">"I still do not think he is the best candidate for our country," the Democratic presidential candidate noted.</p>
+              </li>
+              <li class="stories_list">
+                <div class="image_block">
+                  <img class="stories_image" alt="pic" src="https://d.newsweek.com/en/full/1567564/amy-klobuchar.webp?w=397&h=265&q=90&f=6af0da94fdc2bcd272dde87528e2da02" />
+                  <h4 class="mb-0 block_title"><span class="stores_image_block">U.S</span></h4>
+                </div>
+                <a class="hover_stories" href="#">Amy Klobuchar Says She'd Support Bloomberg and He 'Should Be' in Debates</a>
+                <p class="stories_paragraph">"I still do not think he is the best candidate for our country," the Democratic presidential candidate noted.</p>
+              </li>
+            </ul>
+          </div>
+          <div class="col-lg-7 col-md-7 col-sm-12 col-12 pr-0 order-1 p-md-0 pr-sm-0 order-lg-2 order-md-2 order-sm-1 middle_main">
+            <div class="top_story">
+              <h4 class="header">Top Story</h4>
+              <div class="image_block">
+                <a href="#"><img class="top_image" alt="pic" src="https://d.newsweek.com/en/full/1567739/mike-bloomberg.webp?w=591&h=364&f=b68c41c89fe67b1b2e38e7028a827610" /></a>
+                <h4 class="mb-0 block_title"><span class="stores_image_block">U.S</span></h4>
+              </div>
+              <a class="hover_stories" href="#">Major Primary Debate Shake-Up as Mike Bloomberg Qualifies to Join Stage</a>
+              <p class="stories_paragraph">Former New York City Mayor Mike Bloomberg was second only to Vermont Sen. Bernie Sanders in a new poll released Tuesday.</p>
+            </div>
+            <div class="culture_travel">
+              <h4 class="header pt-2 pl-2">Culture & Travel</h4>
+              <ul class="p-0 d-flex flex-row flex-wrap justify-content-between culture_travel_list">
+                <li class="flex-wrap cul_tra_item">
+                  <img class="cul_tra_image" alt="pic" src="https://d.newsweek.com/en/full/1566346/cul-map-pilgrimages-banner.webp?w=397&h=265&f=ea3f5ab67d879111edcc113a9128afb8" />
+                  <div class="pt-2 pl-2">
+                    <a class="cul_tra_stories" href="#">Sacred Journeys Around the World</a>
+                    <p class="pt-2 cul_tra_paragraph">Escape the crowds on El Camino on these alternative pilgrimages around the world. Follow in the footsteps of Buddhist monks in Japan or a revered Viking king in Scandinavia or seek a shaman's healing in ice-cold lagoons in Peru.</p>
+                    <span class="cul_tra_button">Travel</span>
+                  </div>
+                </li>
+                <li class="cul_tra_item">
+                  <img class="cul_tra_image" alt="pic" src="https://d.newsweek.com/en/full/1566346/cul-map-pilgrimages-banner.webp?w=397&h=265&f=ea3f5ab67d879111edcc113a9128afb8" />
+                  <div class="pt-2 pl-2">
+                    <a class="cul_tra_stories" href="#">Sacred Journeys Around the World</a>
+                    <p class="pt-2 cul_tra_paragraph">Escape the crowds on El Camino on these alternative pilgrimages around the world. Follow in the footsteps of Buddhist monks in Japan or a revered Viking king in Scandinavia or seek a shaman's healing in ice-cold lagoons in Peru.</p>
+                    <span class="cul_tra_button">Travel</span>
+                  </div>
+                </li>
+                <li class="cul_tra_item">
+                  <img class="cul_tra_image" alt="pic" src="https://d.newsweek.com/en/full/1566346/cul-map-pilgrimages-banner.webp?w=397&h=265&f=ea3f5ab67d879111edcc113a9128afb8" />
+                  <div class="pt-2 pl-2">
+                    <a class="cul_tra_stories" href="#">Sacred Journeys Around the World</a>
+                    <p class="pt-2 cul_tra_paragraph">Escape the crowds on El Camino on these alternative pilgrimages around the world. Follow in the footsteps of Buddhist monks in Japan or a revered Viking king in Scandinavia or seek a shaman's healing in ice-cold lagoons in Peru.</p>
+                    <span class="cul_tra_button">Travel</span>
+                  </div>
+                </li>
+                <li class="cul_tra_item">
+                  <img class="cul_tra_image" alt="pic" src="https://d.newsweek.com/en/full/1566346/cul-map-pilgrimages-banner.webp?w=397&h=265&f=ea3f5ab67d879111edcc113a9128afb8" />
+                  <div class="pt-2 pl-2">
+                    <a class="cul_tra_stories" href="#">Sacred Journeys Around the World</a>
+                    <p class="pt-2 cul_tra_paragraph">Escape the crowds on El Camino on these alternative pilgrimages around the world. Follow in the footsteps of Buddhist monks in Japan or a revered Viking king in Scandinavia or seek a shaman's healing in ice-cold lagoons in Peru.</p>
+                    <span class="cul_tra_button">Travel</span>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="more_stories">
+              <h4 class="header">More Stories</h4>
+              <div>
+                <ul class="p-0 pt-1 more_stories_list">
+                  <li class="border-top pb-2 d-flex flex-row more_stories_item">
+                    <img class="pt-3 more_stories_image" alt="pic" src="https://d.newsweek.com/en/full/1567737/donald-trump-bill-barr-crime-syndicate-doj.webp?w=135&h=90&f=5586b29f4d1fd3d351f0264cd0ab59e4" />
+                    <div class="pl-2 pt-3 stories_text_block">
+                      <a class="more_stories_hover" href="#"><h4 class="more_stories_stories">Trump Is 'Running a Crime Syndicate Out of the West Wing;" Ex-Prosecutor</h4></a>
+                      <p class="pt-1 more_stories_paragraph">John Flannery is one of more than 2,000 former Department of Justice officials who have signed an open letter calling on the attorney general to resign.</p>
+                    </div>
+                  </li>
+                  <li class="border-top pb-2 d-flex flex-row more_stories_item">
+                    <img class="pt-3 more_stories_image" alt="pic" src="https://d.newsweek.com/en/full/1567737/donald-trump-bill-barr-crime-syndicate-doj.webp?w=135&h=90&f=5586b29f4d1fd3d351f0264cd0ab59e4" />
+                    <div class="pl-2 pt-3 stories_text_block">
+                      <a class="more_stories_hover" href="#"><h4 class="more_stories_stories">Trump Is 'Running a Crime Syndicate Out of the West Wing;" Ex-Prosecutor</h4></a>
+                      <p class="pt-1 more_stories_paragraph">John Flannery is one of more than 2,000 former Department of Justice officials who have signed an open letter calling on the attorney general to resign.</p>
+                    </div>
+                  </li>
+                  <li class="border-top pb-2 d-flex flex-row more_stories_item">
+                    <img class="pt-3 more_stories_image" alt="pic" src="https://d.newsweek.com/en/full/1567737/donald-trump-bill-barr-crime-syndicate-doj.webp?w=135&h=90&f=5586b29f4d1fd3d351f0264cd0ab59e4" />
+                    <div class="pl-2 pt-3 stories_text_block">
+                      <a class="more_stories_hover" href="#"><h4 class="more_stories_stories">Trump Is 'Running a Crime Syndicate Out of the West Wing;" Ex-Prosecutor</h4></a>
+                      <p class="pt-1 more_stories_paragraph">John Flannery is one of more than 2,000 former Department of Justice officials who have signed an open letter calling on the attorney general to resign.</p>
+                    </div>
+                  </li>
+                  <li class="border-top pb-2 d-flex flex-row more_stories_item">
+                    <img class="pt-3 more_stories_image" alt="pic" src="https://d.newsweek.com/en/full/1567737/donald-trump-bill-barr-crime-syndicate-doj.webp?w=135&h=90&f=5586b29f4d1fd3d351f0264cd0ab59e4" />
+                    <div class="pl-2 pt-3 stories_text_block">
+                      <a class="more_stories_hover" href="#"><h4 class="more_stories_stories">Trump Is 'Running a Crime Syndicate Out of the West Wing;" Ex-Prosecutor</h4></a>
+                      <p class="pt-1 more_stories_paragraph">John Flannery is one of more than 2,000 former Department of Justice officials who have signed an open letter calling on the attorney general to resign.</p>
+                    </div>
+                  </li>
+                  <li class="border-top pb-2 d-flex flex-row more_stories_item">
+                    <img class="pt-3 more_stories_image" alt="pic" src="https://d.newsweek.com/en/full/1567737/donald-trump-bill-barr-crime-syndicate-doj.webp?w=135&h=90&f=5586b29f4d1fd3d351f0264cd0ab59e4" />
+                    <div class="pl-2 pt-3 stories_text_block">
+                      <a class="more_stories_hover" href="#"><h4 class="more_stories_stories">Trump Is 'Running a Crime Syndicate Out of the West Wing;" Ex-Prosecutor</h4></a>
+                      <p class="pt-1 more_stories_paragraph">John Flannery is one of more than 2,000 former Department of Justice officials who have signed an open letter calling on the attorney general to resign.</p>
+                    </div>
+                  </li>
+                  <li class="border-top pb-2 d-flex flex-row more_stories_item">
+                    <img class="pt-3 more_stories_image" alt="pic" src="https://d.newsweek.com/en/full/1567737/donald-trump-bill-barr-crime-syndicate-doj.webp?w=135&h=90&f=5586b29f4d1fd3d351f0264cd0ab59e4" />
+                    <div class="pl-2 pt-3 stories_text_block">
+                      <a class="more_stories_hover" href="#"><h4 class="more_stories_stories">Trump Is 'Running a Crime Syndicate Out of the West Wing;" Ex-Prosecutor</h4></a>
+                      <p class="pt-1 more_stories_paragraph">John Flannery is one of more than 2,000 former Department of Justice officials who have signed an open letter calling on the attorney general to resign.</p>
+                    </div>
+                  </li>
+                  <li class="border-top pb-2 d-flex flex-row more_stories_item">
+                    <img class="pt-3 more_stories_image" alt="pic" src="https://d.newsweek.com/en/full/1567737/donald-trump-bill-barr-crime-syndicate-doj.webp?w=135&h=90&f=5586b29f4d1fd3d351f0264cd0ab59e4" />
+                    <div class="pl-2 pt-3 stories_text_block">
+                      <a class="more_stories_hover" href="#"><h4 class="more_stories_stories">Trump Is 'Running a Crime Syndicate Out of the West Wing;" Ex-Prosecutor</h4></a>
+                      <p class="pt-1 more_stories_paragraph">John Flannery is one of more than 2,000 former Department of Justice officials who have signed an open letter calling on the attorney general to resign.</p>
+                    </div>
+                  </li>
+                  <li class="border-top pb-2 d-flex flex-row more_stories_item">
+                    <img class="pt-3 more_stories_image" alt="pic" src="https://d.newsweek.com/en/full/1567737/donald-trump-bill-barr-crime-syndicate-doj.webp?w=135&h=90&f=5586b29f4d1fd3d351f0264cd0ab59e4" />
+                    <div class="pl-2 pt-3 stories_text_block">
+                      <a class="more_stories_hover" href="#"><h4 class="more_stories_stories">Trump Is 'Running a Crime Syndicate Out of the West Wing;" Ex-Prosecutor</h4></a>
+                      <p class="pt-1 more_stories_paragraph">John Flannery is one of more than 2,000 former Department of Justice officials who have signed an open letter calling on the attorney general to resign.</p>
+                    </div>
+                  </li>
+                  <li class="border-top pb-2 d-flex flex-row more_stories_item">
+                    <img class="pt-3 more_stories_image" alt="pic" src="https://d.newsweek.com/en/full/1567737/donald-trump-bill-barr-crime-syndicate-doj.webp?w=135&h=90&f=5586b29f4d1fd3d351f0264cd0ab59e4" />
+                    <div class="pl-2 pt-3 stories_text_block">
+                      <a class="more_stories_hover" href="#"><h4 class="more_stories_stories">Trump Is 'Running a Crime Syndicate Out of the West Wing;" Ex-Prosecutor</h4></a>
+                      <p class="pt-1 more_stories_paragraph">John Flannery is one of more than 2,000 former Department of Justice officials who have signed an open letter calling on the attorney general to resign.</p>
+                    </div>
+                  </li>
+                  <li class="border-top pb-2 d-flex flex-row more_stories_item">
+                    <img class="pt-3 more_stories_image" alt="pic" src="https://d.newsweek.com/en/full/1567737/donald-trump-bill-barr-crime-syndicate-doj.webp?w=135&h=90&f=5586b29f4d1fd3d351f0264cd0ab59e4" />
+                    <div class="pl-2 pt-3 stories_text_block">
+                      <a class="more_stories_hover" href="#"><h4 class="more_stories_stories">Trump Is 'Running a Crime Syndicate Out of the West Wing;" Ex-Prosecutor</h4></a>
+                      <p class="pt-1 more_stories_paragraph">John Flannery is one of more than 2,000 former Department of Justice officials who have signed an open letter calling on the attorney general to resign.</p>
+                    </div>
+                  </li>
+                  <li class="border-top pb-2 d-flex flex-row more_stories_item">
+                    <img class="pt-3 more_stories_image" alt="pic" src="https://d.newsweek.com/en/full/1567737/donald-trump-bill-barr-crime-syndicate-doj.webp?w=135&h=90&f=5586b29f4d1fd3d351f0264cd0ab59e4" />
+                    <div class="pl-2 pt-3 stories_text_block">
+                      <a class="more_stories_hover" href="#"><h4 class="more_stories_stories">Trump Is 'Running a Crime Syndicate Out of the West Wing;" Ex-Prosecutor</h4></a>
+                      <p class="pt-1 more_stories_paragraph">John Flannery is one of more than 2,000 former Department of Justice officials who have signed an open letter calling on the attorney general to resign.</p>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="pr-2 pl-0 col-12 col-sm-12 col-md-12 col-lg-3 pl-3 right_main">
+          <div class="opinion">
+            <h4 class="header">Opinion</h4>
+            <ul class="p-0 opinion_list">
+              <li class="border-bottom d-flex flex-row opinion_item">
+                <img class="opinion_image" alt="pic" src="https://d.newsweek.com/en/full/1508598/nancy-cohen.webp?w=63&h=63&f=dd03a26c19ee249874565bcb63458b74" />
+                <div class="pl-3">
+                  <a class="opinion_stories" href="#"><h4 class="opinion_stories_title">Why Trump and His Supporters Love to Hate Nancy Pelosi | Opinion</h4></a>
+                  <p class="opinion_author">By Nancy Cohen</p>
+                </div>
+              </li>
+              <li class="pt-2 border-bottom d-flex flex-row opinion_item">
+                <img class="opinion_image" alt="pic" src="https://d.newsweek.com/en/full/1508598/nancy-cohen.webp?w=63&h=63&f=dd03a26c19ee249874565bcb63458b74" />
+                <div class="pl-3">
+                  <a class="opinion_stories" href="#"><h4 class="opinion_stories_title">Why Trump and His Supporters Love to Hate Nancy Pelosi | Opinion</h4></a>
+                  <p class="opinion_author">By Nancy Cohen</p>
+                </div>
+              </li>
+              <li class="pt-2 border-bottom d-flex flex-row opinion_item">
+                <img class="opinion_image" alt="pic" src="https://d.newsweek.com/en/full/1508598/nancy-cohen.webp?w=63&h=63&f=dd03a26c19ee249874565bcb63458b74" />
+                <div class="pl-3">
+                  <a class="opinion_stories" href="#"><h4 class="opinion_stories_title">Why Trump and His Supporters Love to Hate Nancy Pelosi | Opinion</h4></a>
+                  <p class="opinion_author">By Nancy Cohen</p>
+                </div>
+              </li>
+              <li class="pt-2 border-bottom d-flex flex-row opinion_item">
+                <img class="opinion_image" alt="pic" src="https://d.newsweek.com/en/full/1508598/nancy-cohen.webp?w=63&h=63&f=dd03a26c19ee249874565bcb63458b74" />
+                <div class="pl-3">
+                  <a class="opinion_stories" href="#"><h4 class="opinion_stories_title">Why Trump and His Supporters Love to Hate Nancy Pelosi | Opinion</h4></a>
+                  <p class="opinion_author">By Nancy Cohen</p>
+                </div>
+              </li>
+              <li class="pt-2 border-bottom d-flex flex-row opinion_item">
+                <img class="opinion_image" alt="pic" src="https://d.newsweek.com/en/full/1508598/nancy-cohen.webp?w=63&h=63&f=dd03a26c19ee249874565bcb63458b74" />
+                <div class="pl-3">
+                  <a class="opinion_stories" href="#"><h4 class="opinion_stories_title">Why Trump and His Supporters Love to Hate Nancy Pelosi | Opinion</h4></a>
+                  <p class="opinion_author">By Nancy Cohen</p>
+                </div>
+              </li>
+              <li class="pt-2 d-flex flex-row opinion_item">
+                <img class="opinion_image" alt="pic" src="https://d.newsweek.com/en/full/1508598/nancy-cohen.webp?w=63&h=63&f=dd03a26c19ee249874565bcb63458b74" />
+                <div class="pl-3">
+                  <a class="opinion_stories" href="#"><h4 class="opinion_stories_title">Why Trump and His Supporters Love to Hate Nancy Pelosi | Opinion</h4></a>
+                  <p class="opinion_author">By Nancy Cohen</p>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div class="latest_news">
+            <h4 class="header">Latest News</h4>
+            <ul class="p-0 latest_news_list">
+              <li class="border-bottom d-flex flex-row latest_news_item">
+                <img class="mb-3 latest_news_image" alt="pic" src="https://d.newsweek.com/en/full/1567752/crime-scene-stock.webp?w=397&h=265&f=ad4ecadc7800b76db18ccf6479dd81c8" />
+                <p class="pl-3 latest_news_title"><a class="latest_news_heading">Three Men Found Dead In California Cemetery, Murder Investigation Underway</a></p>
+              </li>
+              <li class="border-bottom d-flex flex-row latest_news_item">
+                <img class="mb-3 mt-3 latest_news_image" alt="pic" src="https://d.newsweek.com/en/full/1567752/crime-scene-stock.webp?w=397&h=265&f=ad4ecadc7800b76db18ccf6479dd81c8" />
+                <p class="pl-3 pb-2 pt-2 latest_news_title"><a class="latest_news_heading">Three Men Found Dead In California Cemetery, Murder Investigation Underway</a></p>
+              </li>
+              <li class="border-bottom d-flex flex-row latest_news_item">
+                <img class="mb-3 mt-3 latest_news_image" alt="pic" src="https://d.newsweek.com/en/full/1567752/crime-scene-stock.webp?w=397&h=265&f=ad4ecadc7800b76db18ccf6479dd81c8" />
+                <p class="pl-3 pb-2 pt-2 latest_news_title"><a class="latest_news_heading">Three Men Found Dead In California Cemetery, Murder Investigation Underway</a></p>
+              </li>
+              <li class="border-bottom d-flex flex-row latest_news_item">
+                <img class="mb-3 mt-3 latest_news_image" alt="pic" src="https://d.newsweek.com/en/full/1567752/crime-scene-stock.webp?w=397&h=265&f=ad4ecadc7800b76db18ccf6479dd81c8" />
+                <p class="pl-3 pb-2 pt-2 latest_news_title"><a class="latest_news_heading">Three Men Found Dead In California Cemetery, Murder Investigation Underway</a></p>
+              </li>
+              <li class="border-bottom d-flex flex-row latest_news_item">
+                <img class="mb-3 mt-3 latest_news_image" alt="pic" src="https://d.newsweek.com/en/full/1567752/crime-scene-stock.webp?w=397&h=265&f=ad4ecadc7800b76db18ccf6479dd81c8" />
+                <p class="pl-3 pb-2 pt-2 latest_news_title"><a class="latest_news_heading">Three Men Found Dead In California Cemetery, Murder Investigation Underway</a></p>
+              </li>
+              <li class="border-bottom d-flex flex-row latest_news_item">
+                <img class="mb-3 mt-3 latest_news_image" alt="pic" src="https://d.newsweek.com/en/full/1567752/crime-scene-stock.webp?w=397&h=265&f=ad4ecadc7800b76db18ccf6479dd81c8" />
+                <p class="pl-3 pb-2 pt-2 latest_news_title"><a class="latest_news_heading">Three Men Found Dead In California Cemetery, Murder Investigation Underway</a></p>
+              </li>
+              <li class="d-flex flex-row latest_news_item">
+                <img class="mb-3 mt-3 latest_news_image" alt="pic" src="https://d.newsweek.com/en/full/1567752/crime-scene-stock.webp?w=397&h=265&f=ad4ecadc7800b76db18ccf6479dd81c8" />
+                <p class="pl-3 pb-2 pt-2 latest_news_title"><a class="latest_news_heading">Three Men Found Dead In California Cemetery, Murder Investigation Underway</a></p>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <div class="p-md-3 pb-md-5 row bg-white in_the_magazine">
+      <div class="itm_pages">
+        <h3 class="mr-lg-3 ml-lg-0 mr-md-0 ml-md-0 itm_title_block"><span class="title_icons"></span><span class="pl-2 title_sizes">IN THE MAGAZINE</span></h3>
+        <ul class="p-0 d-flex flex-wrap justify-content-between itm_container">
+          <li class="upper_imt">
+            <ul class="pl-lg-3 pr-lg-3 p-md-0 p-sm-3 p-3 row d-flex justify-content-between upper_imt_list">
+              <li class="pb-3 pl-3 pr-3 col-12 col-sm-12 col-md-3 magazine_cover">
+                <div class="magazine_cover_block">
+                  <img class="cover" alt="cover" src="https://d.newsweek.com/en/full/1566954/february-21-28-2020-cover.webp?w=290&h=387&q=90&f=0363d8cbe76b3b59e3ad0c42e5fd5c73" />
+                  <span class="cover_block"><span class="cover_block_date">February 28 issue</span></span>
+                </div>
+                <span class="cover_lower_block"><span class="cover_lower_text">SEE ALL FEATURES ></span></span>
+              </li>
+              <li class="row upper_itm_items">
+                <h3 class="mb-n2 itm_title_block_mob"><span class="title_icons"></span><span class="pl-2 title_sizes">IN THE MAGAZINE</span></h3>
+                <ul class="p-md-0 p-sm-0 p-0 row d-flex justify-content-between upper_itm_items_list">
+                  <li class="pr-0 pt-3 pr-sm-0 pt-sm-3 pt-md-0 pr-md-3 mt-md-0 col-12 col-sm-12 col-md-4 upper_itm_item">
+                    <img class="itm_pages_image" alt="pic" src="https://d.newsweek.com/en/full/1565878/fea-growth-01.webp?w=466&h=311&q=90&f=b82a1a9dfe5ab417198bc062adcfb0aa" />
+                    <span class="title_block">COVER</span>
+                    <span class="title_world">WORLD</span>
+                    <a href="#"><h3 class="pt-2 itm_title">Growth Can Be Green. Here's How</h3></a>
+                  </li>
+                  <li class="pr-0 pt-5 mt-5 pr-sm-0 pt-sm-5 mt-sm-5 pt-md-0 mt-md-0 pr-md-3 pr-0 mt-md-0 col-12 col-sm-12 col-md-4 upper_itm_item">
+                    <img class="itm_pages_image" alt="pic" src="https://d.newsweek.com/en/full/1565878/fea-growth-01.webp?w=466&h=311&q=90&f=b82a1a9dfe5ab417198bc062adcfb0aa" />
+                    <span class="title_block">COVER</span>
+                    <span class="title_world">WORLD</span>
+                    <a href="#"><h3 class="pt-2 itm_title">Growth Can Be Green. Here's How</h3></a>
+                  </li>
+                  <li class="pr-0 pt-5 mt-5 pr-sm-0 pt-sm-5 mt-sm-5 pt-md-0 pr-md-3 pr-0 mt-md-0 col-12 col-sm-12 col-md-4 upper_itm_item">
+                    <img class="itm_pages_image" alt="pic" src="https://d.newsweek.com/en/full/1565878/fea-growth-01.webp?w=466&h=311&q=90&f=b82a1a9dfe5ab417198bc062adcfb0aa" />
+                    <span class="title_block">COVER</span>
+                    <span class="title_world">WORLD</span>
+                    <a href="#"><h3 class="pt-2 itm_title">Growth Can Be Green. Here's How</h3></a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          <li class="row p-lg-3 p-md-0 pt-md-5 ml-auto mr-auto bg-white lower_imt">
+            <ul class="bg-white pl-3 pl-sm-3 p-md-0 ml-auto mr-auto pt-3 row d-flex justify-content-between lower_imt_list">
+              <li class="pr-md-4 pl-md-0 pt-md-0 pt-sm-5 pl-sm-0 pt-5 pl-0 mb-5 mt-5 col-12 col-sm-12 col-md-3 itm_item">
+                <img class="itm_pages_image" alt="pic" src="https://d.newsweek.com/en/full/1565878/fea-growth-01.webp?w=466&h=311&q=90&f=b82a1a9dfe5ab417198bc062adcfb0aa" />
+                <span class="title_block">COVER</span>
+                <span class="title_world">WORLD</span>
+                <a href="#"><h3 class="pt-2 itm_title">Growth Can Be Green. Here's How</h3></a>
+              </li>
+              <li class="pr-md-3 pl-md-2 pt-md-0 mt-md-0 mt-sm-5 pt-sm-5 pl-sm-0 pt-5 pl-0 col-12 col-sm-12 col-md-3  itm_item">
+                <img class="itm_pages_image" alt="pic" src="https://d.newsweek.com/en/full/1565878/fea-growth-01.webp?w=466&h=311&q=90&f=b82a1a9dfe5ab417198bc062adcfb0aa" />
+                <span class="title_block">COVER</span>
+                <span class="title_world">WORLD</span>
+                <a href="#"><h3 class="pt-2 itm_title">Growth Can Be Green. Here's How</h3></a>
+              </li>
+              <li class="pr-md-2 pl-md-3 pt-md-0 mt-md-0 mt-sm-5 pt-sm-5 pl-sm-0 mb-5 mt-5 pt-5 pl-0 col-12 col-sm-12 col-md-3  itm_item">
+                <img class="itm_pages_image" alt="pic" src="https://d.newsweek.com/en/full/1565878/fea-growth-01.webp?w=466&h=311&q=90&f=b82a1a9dfe5ab417198bc062adcfb0aa" />
+                <span class="title_block">COVER</span>
+                <span class="title_world">WORLD</span>
+                <a href="#"><h3 class="pt-2 itm_title">Growth Can Be Green. Here's How</h3></a>
+              </li>
+              <li class="pr-md-0 pl-md-4 pt-md-0 mt-md-0 mb-md-0 mt-sm-5 mb-sm-5 pt-sm-5 pl-sm-0 mb-5 mt-5 pl-0 col-12 col-sm-12 col-md-3 itm_item">
+                <img class="itm_pages_image" alt="pic" src="https://d.newsweek.com/en/full/1565878/fea-growth-01.webp?w=466&h=311&q=90&f=b82a1a9dfe5ab417198bc062adcfb0aa" />
+                <span class="title_block">COVER</span>
+                <span class="title_world">WORLD</span>
+                <a href="#"><h3 class="pt-2 itm_title">Growth Can Be Green. Here's How</h3></a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="pt-lg-5 p-lg-3 pt-sm-5 pt-md-5 p-md-0 py-5 bg-white row editors_picks">
+      <h3 class="mr-3 ml-3 editors_picks_title"><span class="title_icons"></span><span class="pl-2 title_sizes">EDITOR'S PICK</span></h3>
+      <div class="editors_container">
+        <ul class="p-0 row ml-auto mr-auto d-flex justify-content-between flex-wrap picks_list">
+          <li class="p-3 col-12 col-sm-12 col-md-6 col-lg-3 picks_item">
+            <div class="picks_image_block">
+              <img class="picks_image" alt="pic" src="https://d.newsweek.com/en/full/1567763/obama-trump-white-house-economy-recession.webp?w=397&h=265&f=5bcc7cd6cad53b727b889091d6db7b97" />
+              <span class="picks_image_text">POLITICS</span>
+            </div>
+            <a href="#"><h3 class="pt-2 picks_title">Trump Responds to Obama's Presidents Day Tweet, Calls it a 'Con Job'</h3></a>
+            <p class="pt-2 picks_paragraph">The president attacked his predecessor on Twitter after the latter took credit "for more than a decade of economic growth and the longest streak of job creation in American history."</p>
+          </li>
+          <li class="p-3 col-12 col-sm-12 col-md-6 col-lg-3 picks_item">
+            <div class="picks_image_block">
+              <img class="picks_image" alt="pic" src="https://d.newsweek.com/en/full/1567763/obama-trump-white-house-economy-recession.webp?w=397&h=265&f=5bcc7cd6cad53b727b889091d6db7b97" />
+              <span class="picks_image_text">POLITICS</span>
+            </div>
+            <a href="#"><h3 class="pt-2 picks_title">Trump Responds to Obama's Presidents Day Tweet, Calls it a 'Con Job'</h3></a>
+            <p class="pt-2 picks_paragraph">The president attacked his predecessor on Twitter after the latter took credit "for more than a decade of economic growth and the longest streak of job creation in American history."</p>
+          </li>
+          <li class="p-3 col-12 col-sm-12 col-md-6 col-lg-3 picks_item">
+            <div class="picks_image_block">
+              <img class="picks_image" alt="pic" src="https://d.newsweek.com/en/full/1567763/obama-trump-white-house-economy-recession.webp?w=397&h=265&f=5bcc7cd6cad53b727b889091d6db7b97" />
+              <span class="picks_image_text">POLITICS</span>
+            </div>
+            <a href="#"><h3 class="pt-2 picks_title">Trump Responds to Obama's Presidents Day Tweet, Calls it a 'Con Job'</h3></a>
+            <p class="pt-2 picks_paragraph">The president attacked his predecessor on Twitter after the latter took credit "for more than a decade of economic growth and the longest streak of job creation in American history."</p>
+          </li>
+          <li class="p-3 col-12 col-sm-12 col-md-6 col-lg-3 picks_item">
+            <div class="picks_image_block">
+              <img class="picks_image" alt="pic" src="https://d.newsweek.com/en/full/1567763/obama-trump-white-house-economy-recession.webp?w=397&h=265&f=5bcc7cd6cad53b727b889091d6db7b97" />
+              <span class="picks_image_text">POLITICS</span>
+            </div>
+            <a href="#"><h3 class="pt-2 picks_title">Trump Responds to Obama's Presidents Day Tweet, Calls it a 'Con Job'</h3></a>
+            <p class="pt-2 picks_paragraph">The president attacked his predecessor on Twitter after the latter took credit "for more than a decade of economic growth and the longest streak of job creation in American history."</p>
+          </li>
+          <li class="p-3 col-12 col-sm-12 col-md-6 col-lg-3 picks_item">
+            <div class="picks_image_block">
+              <img class="picks_image" alt="pic" src="https://d.newsweek.com/en/full/1567763/obama-trump-white-house-economy-recession.webp?w=397&h=265&f=5bcc7cd6cad53b727b889091d6db7b97" />
+              <span class="picks_image_text">POLITICS</span>
+            </div>
+            <a href="#"><h3 class="pt-2 picks_title">Trump Responds to Obama's Presidents Day Tweet, Calls it a 'Con Job'</h3></a>
+            <p class="pt-2 picks_paragraph">The president attacked his predecessor on Twitter after the latter took credit "for more than a decade of economic growth and the longest streak of job creation in American history."</p>
+          </li>
+          <li class="p-3 col-12 col-sm-12 col-md-6 col-lg-3 picks_item">
+            <div class="picks_image_block">
+              <img class="picks_image" alt="pic" src="https://d.newsweek.com/en/full/1567763/obama-trump-white-house-economy-recession.webp?w=397&h=265&f=5bcc7cd6cad53b727b889091d6db7b97" />
+              <span class="picks_image_text">POLITICS</span>
+            </div>
+            <a href="#"><h3 class="pt-2 picks_title">Trump Responds to Obama's Presidents Day Tweet, Calls it a 'Con Job'</h3></a>
+            <p class="pt-2 picks_paragraph">The president attacked his predecessor on Twitter after the latter took credit "for more than a decade of economic growth and the longest streak of job creation in American history."</p>
+          </li>
+          <li class="p-3 col-12 col-sm-12 col-md-6 col-lg-3 picks_item">
+            <div class="picks_image_block">
+              <img class="picks_image" alt="pic" src="https://d.newsweek.com/en/full/1567763/obama-trump-white-house-economy-recession.webp?w=397&h=265&f=5bcc7cd6cad53b727b889091d6db7b97" />
+              <span class="picks_image_text">POLITICS</span>
+            </div>
+            <a href="#"><h3 class="pt-2 picks_title">Trump Responds to Obama's Presidents Day Tweet, Calls it a 'Con Job'</h3></a>
+            <p class="pt-2 picks_paragraph">The president attacked his predecessor on Twitter after the latter took credit "for more than a decade of economic growth and the longest streak of job creation in American history."</p>
+          </li>
+          <li class="p-3 col-12 col-sm-12 col-md-6 col-lg-3 picks_item">
+            <div class="picks_image_block">
+              <img class="picks_image" alt="pic" src="https://d.newsweek.com/en/full/1567763/obama-trump-white-house-economy-recession.webp?w=397&h=265&f=5bcc7cd6cad53b727b889091d6db7b97" />
+              <span class="picks_image_text">POLITICS</span>
+            </div>
+            <a href="#"><h3 class="pt-2 picks_title">Trump Responds to Obama's Presidents Day Tweet, Calls it a 'Con Job'</h3></a>
+            <p class="pt-2 picks_paragraph">The president attacked his predecessor on Twitter after the latter took credit "for more than a decade of economic growth and the longest streak of job creation in American history."</p>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="p-lg-3 pt-5 pt-sm-5 pt-md-5 p-md-0 row bg-white featured_slideshows">
+      <h3 class="mr-3 ml-3 fs_title_top"><span class="title_icons"></span><span class="pl-2 title_sizes">FEATURED SLIDESHOWS</span></h3>
+      <div class="fs_container">
+        <ul class="p-0 row ml-auto mr-auto d-flex justify-content-between flex-wrap fs_list">
+          <li class="p-3 col-12 col-sm-12 col-md-4 fs_item">
+            <div class="fs_image_block">
+              <img class="fs_image" alt="pic" src="https://d.newsweek.com/en/full/1560097/tozeur-tunisia.webp?w=397&h=265&f=69a77ef1bd7e21c060a7b7685b05a73d" />
+              <span class="fs_image_text">7</span>
+            </div>
+            <a href="#"><h3 class="pt-2 fs_title">Relive the 'Star Wars' Saga at These Filming Locations</h3></a>
+          </li>
+          <li class="p-3 col-12 col-sm-12 col-md-4 fs_item">
+            <div class="fs_image_block">
+              <img class="fs_image" alt="pic" src="https://d.newsweek.com/en/full/1560097/tozeur-tunisia.webp?w=397&h=265&f=69a77ef1bd7e21c060a7b7685b05a73d" />
+              <span class="fs_image_text">7</span>
+            </div>
+            <a href="#"><h3 class="pt-2 fs_title">Relive the 'Star Wars' Saga at These Filming Locations</h3></a>
+          </li>
+          <li class="p-3 col-12 col-sm-12 col-md-4 fs_item">
+            <div class="fs_image_block">
+              <img class="fs_image" alt="pic" src="https://d.newsweek.com/en/full/1560097/tozeur-tunisia.webp?w=397&h=265&f=69a77ef1bd7e21c060a7b7685b05a73d" />
+              <span class="fs_image_text">7</span>
+            </div>
+            <a href="#"><h3 class="pt-2 fs_title">Relive the 'Star Wars' Saga at These Filming Locations</h3></a>
+          </li>
+          <li class="p-3 col-12 col-sm-12 col-md-4 fs_item">
+            <div class="fs_image_block">
+              <img class="fs_image" alt="pic" src="https://d.newsweek.com/en/full/1560097/tozeur-tunisia.webp?w=397&h=265&f=69a77ef1bd7e21c060a7b7685b05a73d" />
+              <span class="fs_image_text">7</span>
+            </div>
+            <a href="#"><h3 class="pt-2 fs_title">Relive the 'Star Wars' Saga at These Filming Locations</h3></a>
+          </li>
+          <li class="p-3 col-12 col-sm-12 col-md-4 fs_item">
+            <div class="fs_image_block">
+              <img class="fs_image" alt="pic" src="https://d.newsweek.com/en/full/1560097/tozeur-tunisia.webp?w=397&h=265&f=69a77ef1bd7e21c060a7b7685b05a73d" />
+              <span class="fs_image_text">7</span>
+            </div>
+            <a href="#"><h3 class="pt-2 fs_title">Relive the 'Star Wars' Saga at These Filming Locations</h3></a>
+          </li>
+          <li class="p-3 col-12 col-sm-12 col-md-4 fs_item">
+            <div class="fs_image_block">
+              <img class="fs_image" alt="pic" src="https://d.newsweek.com/en/full/1560097/tozeur-tunisia.webp?w=397&h=265&f=69a77ef1bd7e21c060a7b7685b05a73d" />
+              <span class="fs_image_text">7</span>
+            </div>
+            <a href="#"><h3 class="pt-2 fs_title">Relive the 'Star Wars' Saga at These Filming Locations</h3></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="p-lg-3 p-md-0 bg-white border-bottom row ending_page">
+      <h3 class="pt-3 pb-2 mr-3 ml-3 ending_title_top">U.S</h3>
+      <div class="ending_block">
+        <div class="p-0 mt-n4 row ml-auto mr-auto d-flex justify-content-between ending_page_list">
+          <div class="p-3 col-12 col-sm-12 col-md-4 ending_image_block">
+            <img class="ending_image" alt="pic" src="https://d.newsweek.com/en/full/1567714/bill-de-blasio.webp?w=397&h=265&f=853a2988704188478040f8a9afebb233" />
+            <a href="#"><h3 class="pt-2 ending_title">New York Mayor Bill de Blasio Criticizes Michael Bloomberg</h3></a>
+          </div>
+          <div class="p-3 col-12 col-sm-12 col-md-4 ending_image_block">
+            <img class="ending_image" alt="pic" src="https://d.newsweek.com/en/full/1567704/pete-buttigieg-chasten.webp?w=397&h=265&f=6becabbc773eb05d64ce6c0a6742f308" />
+            <a href="#"><h3 class="pt-1 ending_title">Fox Host Cuts Off Critique of Trump's Relationships In Buttigieg Discussion</h3></a>
+          </div>
+          <ul class="p-3 col-12 col-sm-12 col-md-4 ending_image_block">
+            <li class="pb-2 d-flex flex-row ending_item">
+              <img class="ending_item_image" alt="pic" src="https://d.newsweek.com/en/full/1567693/jackson-pearl-river-flood.webp?w=135&h=90&f=e92a96a540906892659677992c048c9e" />
+              <a class="title_underline" href="#"><h3 class="ml-3 ending_item_title">Pearl River Flood Map, Forecast As River Expected To Crest</h3></a>
+            </li>
+            <li class="pt-2 pb-2 border-top border-bottom d-flex flex-row ending_item">
+              <img class="ending_item_image" alt="pic" src="https://d.newsweek.com/en/full/1567693/jackson-pearl-river-flood.webp?w=135&h=90&f=e92a96a540906892659677992c048c9e" />
+              <a class="title_underline" href="#"><h3 class="ml-3 ending_item_title">Pearl River Flood Map, Forecast As River Expected To Crest</h3></a>
+            </li>
+            <li class="pt-2 d-flex flex-row ending_item">
+              <img class="ending_item_image" alt="pic" src="https://d.newsweek.com/en/full/1567693/jackson-pearl-river-flood.webp?w=135&h=90&f=e92a96a540906892659677992c048c9e" />
+              <a class="title_underline" href="#"><h3 class="ml-3 ending_item_title">Pearl River Flood Map, Forecast As River Expected To Crest</h3></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <h3 class="pt-3 pb-2 mr-3 ml-3 ending_title_top">U.S</h3>
+      <div class="ending_block">
+        <div class="p-0 mt-n4 row ml-auto mr-auto d-flex justify-content-between ending_page_list">
+          <div class="p-3 col-12 col-sm-12 col-md-4 ending_image_block">
+            <img class="ending_image" alt="pic" src="https://d.newsweek.com/en/full/1567714/bill-de-blasio.webp?w=397&h=265&f=853a2988704188478040f8a9afebb233" />
+            <a href="#"><h3 class="pt-2 ending_title">New York Mayor Bill de Blasio Criticizes Michael Bloomberg</h3></a>
+          </div>
+          <div class="p-3 col-12 col-sm-12 col-md-4 ending_image_block">
+            <img class="ending_image" alt="pic" src="https://d.newsweek.com/en/full/1567704/pete-buttigieg-chasten.webp?w=397&h=265&f=6becabbc773eb05d64ce6c0a6742f308" />
+            <a href="#"><h3 class="pt-1 ending_title">Fox Host Cuts Off Critique of Trump's Relationships In Buttigieg Discussion</h3></a>
+          </div>
+          <ul class="p-3 col-12 col-sm-12 col-md-4 ending_image_block">
+            <li class="pb-2 d-flex flex-row ending_item">
+              <img class="ending_item_image" alt="pic" src="https://d.newsweek.com/en/full/1567693/jackson-pearl-river-flood.webp?w=135&h=90&f=e92a96a540906892659677992c048c9e" />
+              <a class="title_underline" href="#"><h3 class="ml-3 ending_item_title">Pearl River Flood Map, Forecast As River Expected To Crest</h3></a>
+            </li>
+            <li class="pt-2 pb-2 border-top border-bottom d-flex flex-row ending_item">
+              <img class="ending_item_image" alt="pic" src="https://d.newsweek.com/en/full/1567693/jackson-pearl-river-flood.webp?w=135&h=90&f=e92a96a540906892659677992c048c9e" />
+              <a class="title_underline" href="#"><h3 class="ml-3 ending_item_title">Pearl River Flood Map, Forecast As River Expected To Crest</h3></a>
+            </li>
+            <li class="pt-2 d-flex flex-row ending_item">
+              <img class="ending_item_image" alt="pic" src="https://d.newsweek.com/en/full/1567693/jackson-pearl-river-flood.webp?w=135&h=90&f=e92a96a540906892659677992c048c9e" />
+              <a class="title_underline" href="#"><h3 class="ml-3 ending_item_title">Pearl River Flood Map, Forecast As River Expected To Crest</h3></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <h3 class="pt-3 pb-2 mr-3 ml-3 ending_title_top">U.S</h3>
+      <div class="ending_block">
+        <div class="p-0 mt-n4 row ml-auto mr-auto d-flex justify-content-between ending_page_list">
+          <div class="p-3 col-12 col-sm-12 col-md-4 ending_image_block">
+            <img class="ending_image" alt="pic" src="https://d.newsweek.com/en/full/1567714/bill-de-blasio.webp?w=397&h=265&f=853a2988704188478040f8a9afebb233" />
+            <a href="#"><h3 class="pt-2 ending_title">New York Mayor Bill de Blasio Criticizes Michael Bloomberg</h3></a>
+          </div>
+          <div class="p-3 col-12 col-sm-12 col-md-4 ending_image_block">
+            <img class="ending_image" alt="pic" src="https://d.newsweek.com/en/full/1567704/pete-buttigieg-chasten.webp?w=397&h=265&f=6becabbc773eb05d64ce6c0a6742f308" />
+            <a href="#"><h3 class="pt-1 ending_title">Fox Host Cuts Off Critique of Trump's Relationships In Buttigieg Discussion</h3></a>
+          </div>
+          <ul class="p-3 col-12 col-sm-12 col-md-4 ending_image_block">
+            <li class="pb-2 d-flex flex-row ending_item">
+              <img class="ending_item_image" alt="pic" src="https://d.newsweek.com/en/full/1567693/jackson-pearl-river-flood.webp?w=135&h=90&f=e92a96a540906892659677992c048c9e" />
+              <a class="title_underline" href="#"><h3 class="ml-3 ending_item_title">Pearl River Flood Map, Forecast As River Expected To Crest</h3></a>
+            </li>
+            <li class="pt-2 pb-2 border-top border-bottom d-flex flex-row ending_item">
+              <img class="ending_item_image" alt="pic" src="https://d.newsweek.com/en/full/1567693/jackson-pearl-river-flood.webp?w=135&h=90&f=e92a96a540906892659677992c048c9e" />
+              <a class="title_underline" href="#"><h3 class="ml-3 ending_item_title">Pearl River Flood Map, Forecast As River Expected To Crest</h3></a>
+            </li>
+            <li class="pt-2 d-flex flex-row ending_item">
+              <img class="ending_item_image" alt="pic" src="https://d.newsweek.com/en/full/1567693/jackson-pearl-river-flood.webp?w=135&h=90&f=e92a96a540906892659677992c048c9e" />
+              <a class="title_underline" href="#"><h3 class="ml-3 ending_item_title">Pearl River Flood Map, Forecast As River Expected To Crest</h3></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <h3 class="pt-3 pb-2 mr-3 ml-3 ending_title_top">U.S</h3>
+      <div class="ending_block">
+        <div class="p-0 mt-n4 row ml-auto mr-auto d-flex justify-content-between ending_page_list">
+          <div class="p-3 col-12 col-sm-12 col-md-4 ending_image_block">
+            <img class="ending_image" alt="pic" src="https://d.newsweek.com/en/full/1567714/bill-de-blasio.webp?w=397&h=265&f=853a2988704188478040f8a9afebb233" />
+            <a href="#"><h3 class="pt-2 ending_title">New York Mayor Bill de Blasio Criticizes Michael Bloomberg</h3></a>
+          </div>
+          <div class="p-3 col-12 col-sm-12 col-md-4 ending_image_block">
+            <img class="ending_image" alt="pic" src="https://d.newsweek.com/en/full/1567704/pete-buttigieg-chasten.webp?w=397&h=265&f=6becabbc773eb05d64ce6c0a6742f308" />
+            <a href="#"><h3 class="pt-1 ending_title">Fox Host Cuts Off Critique of Trump's Relationships In Buttigieg Discussion</h3></a>
+          </div>
+          <ul class="p-3 col-12 col-sm-12 col-md-4 ending_image_block">
+            <li class="pb-2 d-flex flex-row ending_item">
+              <img class="ending_item_image" alt="pic" src="https://d.newsweek.com/en/full/1567693/jackson-pearl-river-flood.webp?w=135&h=90&f=e92a96a540906892659677992c048c9e" />
+              <a class="title_underline" href="#"><h3 class="ml-3 ending_item_title">Pearl River Flood Map, Forecast As River Expected To Crest</h3></a>
+            </li>
+            <li class="pt-2 pb-2 border-top border-bottom d-flex flex-row ending_item">
+              <img class="ending_item_image" alt="pic" src="https://d.newsweek.com/en/full/1567693/jackson-pearl-river-flood.webp?w=135&h=90&f=e92a96a540906892659677992c048c9e" />
+              <a class="title_underline" href="#"><h3 class="ml-3 ending_item_title">Pearl River Flood Map, Forecast As River Expected To Crest</h3></a>
+            </li>
+            <li class="pt-2 d-flex flex-row ending_item">
+              <img class="ending_item_image" alt="pic" src="https://d.newsweek.com/en/full/1567693/jackson-pearl-river-flood.webp?w=135&h=90&f=e92a96a540906892659677992c048c9e" />
+              <a class="title_underline" href="#"><h3 class="ml-3 ending_item_title">Pearl River Flood Map, Forecast As River Expected To Crest</h3></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <h3 class="pt-3 pb-2 mr-3 ml-3 ending_title_top">U.S</h3>
+      <div class="ending_block">
+        <div class="p-0 mt-n4 row ml-auto mr-auto d-flex justify-content-between ending_page_list">
+          <div class="p-3 col-12 col-sm-12 col-md-4 ending_image_block">
+            <img class="ending_image" alt="pic" src="https://d.newsweek.com/en/full/1567714/bill-de-blasio.webp?w=397&h=265&f=853a2988704188478040f8a9afebb233" />
+            <a href="#"><h3 class="pt-2 ending_title">New York Mayor Bill de Blasio Criticizes Michael Bloomberg</h3></a>
+          </div>
+          <div class="p-3 col-12 col-sm-12 col-md-4 ending_image_block">
+            <img class="ending_image" alt="pic" src="https://d.newsweek.com/en/full/1567704/pete-buttigieg-chasten.webp?w=397&h=265&f=6becabbc773eb05d64ce6c0a6742f308" />
+            <a href="#"><h3 class="pt-1 ending_title">Fox Host Cuts Off Critique of Trump's Relationships In Buttigieg Discussion</h3></a>
+          </div>
+          <ul class="p-3 col-12 col-sm-12 col-md-4 ending_image_block">
+            <li class="pb-2 d-flex flex-row ending_item">
+              <img class="ending_item_image" alt="pic" src="https://d.newsweek.com/en/full/1567693/jackson-pearl-river-flood.webp?w=135&h=90&f=e92a96a540906892659677992c048c9e" />
+              <a class="title_underline" href="#"><h3 class="ml-3 ending_item_title">Pearl River Flood Map, Forecast As River Expected To Crest</h3></a>
+            </li>
+            <li class="pt-2 pb-2 border-top border-bottom d-flex flex-row ending_item">
+              <img class="ending_item_image" alt="pic" src="https://d.newsweek.com/en/full/1567693/jackson-pearl-river-flood.webp?w=135&h=90&f=e92a96a540906892659677992c048c9e" />
+              <a class="title_underline" href="#"><h3 class="ml-3 ending_item_title">Pearl River Flood Map, Forecast As River Expected To Crest</h3></a>
+            </li>
+            <li class="pt-2 d-flex flex-row ending_item">
+              <img class="ending_item_image" alt="pic" src="https://d.newsweek.com/en/full/1567693/jackson-pearl-river-flood.webp?w=135&h=90&f=e92a96a540906892659677992c048c9e" />
+              <a class="title_underline" href="#"><h3 class="ml-3 ending_item_title">Pearl River Flood Map, Forecast As River Expected To Crest</h3></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <h3 class="pt-3 pb-2 mr-3 ml-3 ending_title_top">U.S</h3>
+      <div class="ending_block">
+        <div class="p-0 mt-n4 row ml-auto mr-auto d-flex justify-content-between ending_page_list">
+          <div class="p-3 col-12 col-sm-12 col-md-4 ending_image_block">
+            <img class="ending_image" alt="pic" src="https://d.newsweek.com/en/full/1567714/bill-de-blasio.webp?w=397&h=265&f=853a2988704188478040f8a9afebb233" />
+            <a href="#"><h3 class="pt-2 ending_title">New York Mayor Bill de Blasio Criticizes Michael Bloomberg</h3></a>
+          </div>
+          <div class="p-3 col-12 col-sm-12 col-md-4 ending_image_block">
+            <img class="ending_image" alt="pic" src="https://d.newsweek.com/en/full/1567704/pete-buttigieg-chasten.webp?w=397&h=265&f=6becabbc773eb05d64ce6c0a6742f308" />
+            <a href="#"><h3 class="pt-1 ending_title">Fox Host Cuts Off Critique of Trump's Relationships In Buttigieg Discussion</h3></a>
+          </div>
+          <ul class="p-3 col-12 col-sm-12 col-md-4 ending_image_block">
+            <li class="pb-2 d-flex flex-row ending_item">
+              <img class="ending_item_image" alt="pic" src="https://d.newsweek.com/en/full/1567693/jackson-pearl-river-flood.webp?w=135&h=90&f=e92a96a540906892659677992c048c9e" />
+              <a class="title_underline" href="#"><h3 class="ml-3 ending_item_title">Pearl River Flood Map, Forecast As River Expected To Crest</h3></a>
+            </li>
+            <li class="pt-2 pb-2 border-top border-bottom d-flex flex-row ending_item">
+              <img class="ending_item_image" alt="pic" src="https://d.newsweek.com/en/full/1567693/jackson-pearl-river-flood.webp?w=135&h=90&f=e92a96a540906892659677992c048c9e" />
+              <a class="title_underline" href="#"><h3 class="ml-3 ending_item_title">Pearl River Flood Map, Forecast As River Expected To Crest</h3></a>
+            </li>
+            <li class="pt-2 d-flex flex-row ending_item">
+              <img class="ending_item_image" alt="pic" src="https://d.newsweek.com/en/full/1567693/jackson-pearl-river-flood.webp?w=135&h=90&f=e92a96a540906892659677992c048c9e" />
+              <a class="title_underline" href="#"><h3 class="ml-3 ending_item_title">Pearl River Flood Map, Forecast As River Expected To Crest</h3></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <h3 class="pt-3 pb-2 mr-3 ml-3 ending_title_top">U.S</h3>
+      <div class="ending_block">
+        <div class="p-0 mt-n4 row ml-auto mr-auto d-flex justify-content-between ending_page_list">
+          <div class="p-3 col-12 col-sm-12 col-md-4 ending_image_block">
+            <img class="ending_image" alt="pic" src="https://d.newsweek.com/en/full/1567714/bill-de-blasio.webp?w=397&h=265&f=853a2988704188478040f8a9afebb233" />
+            <a href="#"><h3 class="pt-2 ending_title">New York Mayor Bill de Blasio Criticizes Michael Bloomberg</h3></a>
+          </div>
+          <div class="p-3 col-12 col-sm-12 col-md-4 ending_image_block">
+            <img class="ending_image" alt="pic" src="https://d.newsweek.com/en/full/1567704/pete-buttigieg-chasten.webp?w=397&h=265&f=6becabbc773eb05d64ce6c0a6742f308" />
+            <a href="#"><h3 class="pt-1 ending_title">Fox Host Cuts Off Critique of Trump's Relationships In Buttigieg Discussion</h3></a>
+          </div>
+          <ul class="p-3 col-12 col-sm-12 col-md-4 ending_image_block">
+            <li class="pb-2 d-flex flex-row ending_item">
+              <img class="ending_item_image" alt="pic" src="https://d.newsweek.com/en/full/1567693/jackson-pearl-river-flood.webp?w=135&h=90&f=e92a96a540906892659677992c048c9e" />
+              <a class="title_underline" href="#"><h3 class="ml-3 ending_item_title">Pearl River Flood Map, Forecast As River Expected To Crest</h3></a>
+            </li>
+            <li class="pt-2 pb-2 border-top border-bottom d-flex flex-row ending_item">
+              <img class="ending_item_image" alt="pic" src="https://d.newsweek.com/en/full/1567693/jackson-pearl-river-flood.webp?w=135&h=90&f=e92a96a540906892659677992c048c9e" />
+              <a class="title_underline" href="#"><h3 class="ml-3 ending_item_title">Pearl River Flood Map, Forecast As River Expected To Crest</h3></a>
+            </li>
+            <li class="pt-2 d-flex flex-row ending_item">
+              <img class="ending_item_image" alt="pic" src="https://d.newsweek.com/en/full/1567693/jackson-pearl-river-flood.webp?w=135&h=90&f=e92a96a540906892659677992c048c9e" />
+              <a class="title_underline" href="#"><h3 class="ml-3 ending_item_title">Pearl River Flood Map, Forecast As River Expected To Crest</h3></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="p-lg-3 p-md-0 border-bottom bg-white d-flex row justify-content-between subscribe_newsletter">
+      <div class="p-3 col-12 col-sm-12 col-md-12 col-lg-8 subscribe_block">
+        <h3 class="sn_title">SUBSCRIBE</h3>
+        <div class="p-4 pb-5 bg-light d-flex flex-column justify-content-center align-items-center d-sm-flex flex-sm-column justify-content-sm-center align-items-sm-center d-md-flex justify-content-md-between flex-md-row subscribe">
+          <div class="p-0 subscribe_image_block">
+          <img class="subscribe_image1" alt="pic" src="https://d.newsweek.com/en/full/1564924/february-14-2020-cover.jpg?w=170&q=95&f=c1d5601167747525a4d15e56749350ec">
+          <img class="subscribe_image2" alt="pic" src="https://d.newsweek.com/en/full/1566954/february-21-28-2020-cover.jpg?w=170&q=95&f=4266076976cfcb9a853392f06c8a02c1">
+          </div>
+          <div class="mt-4 text-center text-sm-center text-md-left subscribe_title_block">
+            <h3 class="align-center subscribe_title">In-depth Stories You Don't See Elsewhere About Topics You Want to Read!</h3>
+            <p class="pt-3 pb-3 subscribe_paragraph">All Access + Weekly Delivery.<br>
+              Choose A Membership That's Perfect for You!
+            </p>
+            <span class="subscribe_button">Subscribe ></span>
+          </div>
+        </div>
+      </div>
+      <div class="p-3 col-12 col-sm-12 col-md-12 col-lg-4 newsletter_block">
+        <h3 class="sn_title">NEWSLETTER</h3>
+        <div class="border d-flex flex-column justify-content-center align-items-center d-sm-flex flex-sm-column justify-content-sm-center align-items-sm-center d-md-flex justify-content-md-between flex-md-row newsletter">
+          <div class="newsletter_background"></div>
+          <div class="pt-4 pl-4 pr-3 text-center text-sm-center text-md-left newsletter_title_block">
+            <h3 class="subscribe_title">The Starting 5</h3>
+            <p class="pt-2 pb-2 subscribe_paragraph">Take back your inbox. Sign up for our newsletter and start making sense of the world around you.</p>
+            <span class="mb-5 mb-sm-5 mb-md-0 subscribe_button">Sign up ></span>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <footer class="p-lg-5 p-md-4 p-sm-4 pt-sm-0 p-4 pt-0 bg-white row footer">
+      <div class="p-2 pt-4 border-bottom d-sm-flex flex-sm-column justify-content-sm-center align-items-sm-center d-md-flex justify-content-md-between flex-md-row footer_links">
+        <div class="pb-2 pt-2 footer_newsweek"><img class="footer_logo" alt="pic" src="logo-red.svg"><span class="pl-sm-0 pl-md-2 pb-1 footer_logo_date">© 2020 Newsweek</span></div>
+        <div class="pb-2 pt-2 footer_right_links">
+          <i class="pr-2 fab fa-facebook-square fa-lg"></i>
+          <i class="pr-2 fab fa-twitter fa-lg"></i>
+          <i class="pr-2 fab fa-instagram fa-lg"></i>
+          <i class="pr-2 fab fa-tumblr fa-lg"></i>
+          <i class="fab fa-linkedin-in fa-lg"></i>
+        </div>
+      </div>
+      <div class="mt-2 footer_about">
+        <span class="footer_about_links"><span class="foooter_editions">Editions:</span><span class="pl-2 about_link">U.S. Edition</span> | <span class="about_link">日本</span> | <span class="about_link">Pakistan</span> | <span class="about_link">Polska</span> | <span class="about_link">România</span></span><br>
+        <span class="mt-1 mb-1 footer_about_links"><span class="about_link">About Us</span> | <span class="about_link">Corrections</span> | <span class="about_link">Contact Us</span> | <span class="about_link">Editorial Guidelines</span> | <span class="about_link">Advertise</span> | <span class="about_link">Copyright</span> | <span class="about_link">Terms & Conditions</span> | <span class="about_link">Privacy Policy</span> | <span class="about_link">Cookie Policy</span> | <span class="about_link">Terms of Sale</span> | <span class="about_link">Archive</span> |</span><br>
+        <span class="footer_about_links"><span class="about_link">Announcements</span> | <span class="about_link">Consent preferences</span></span>
+      </div>
+    </footer>
+  </body>
+</html>
