@@ -91,6 +91,14 @@ nav {
   text-decoration: none;
 }
 
+.mobile_featured_stories {
+  display: none;
+}
+
+.mobile_opinion {
+  display: none;
+}
+
 .fas {
   color: black;
 }
@@ -283,6 +291,7 @@ nav {
 }
 
 .latest_news_image {
+  width: 60%;
   cursor: pointer;
 }
 
@@ -810,6 +819,22 @@ nav {
 @media screen and (max-width: 768px) {
   .latest_news_image {
     width: 40%;
+  }
+
+  .featured_stories {
+    display: none;
+  }
+
+  .opinion {
+    display: none;
+  }
+
+  .mobile_featured_stories {
+    display: block;
+  }
+
+  .mobile_opinion {
+    display: block;
   }
 
   .upper_itm_items {
