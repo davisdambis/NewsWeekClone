@@ -22,7 +22,7 @@ It shows you a static clone of [Newsweek](https://www.newsweek.com/).
 
 ## Live Demo
 
-[Live Demo](https://rawcdn.githack.com/davisdambis/NewsWeekClone/bf5ba3362a67878a4d7e803220d27b6e0f570132/index.html)
+[Live Demo](https://rawcdn.githack.com/davisdambis/NewsWeekClone/02d360f41866ff21f8af062e86f2616c2fced83e/index.html)
 
 ## 🤝 Contributing
 
